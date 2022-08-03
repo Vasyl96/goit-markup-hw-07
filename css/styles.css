@@ -292,7 +292,7 @@ ol {
 /* Button silver end */
 /* Button end */
 
-/* Modal and is-hedden */
+/* Backdrop and is-hidden start  */
 .backdrop.is-hidden {
   pointer-events: none;
   visibility: hidden;
@@ -312,6 +312,9 @@ ol {
     visibility var(--transition-duration) var(--transition-timing-function);
 }
 
+/* Backdrop and is-hidden and */
+
+/* Modal */
 .modal {
   padding: 40px;
   position: absolute;
@@ -330,7 +333,8 @@ ol {
     visibility var(--transition-duration) var(--transition-timing-function);
 }
 
-.modal-close {
+/* Button modal close start */
+.modal__btn-close {
   display: flex;
   cursor: pointer;
   align-items: center;
@@ -347,29 +351,21 @@ ol {
     opacity var(--transition-duration) var(--transition-timing-function);
 }
 
-.modal-close:focus .icon-modal,
-.modal-close:hover .icon-modal {
+.modal__btn-close:focus,
+.modal__btn-close:hover {
   fill: #2196f3;
 }
 
-.icon-modal {
+.modal__btn-icon {
   height: 18px;
   width: 18px;
-  padding: 0;
-  margin: 0;
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
+/* Button modal close end*/
 
-.modal-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px;
-}
-
-.modal-text {
-  margin: 0;
-  margin-bottom: 12px;
+.modal__text {
+  display: block;
+  text-align: center;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -379,20 +375,47 @@ ol {
   color: var(--dark-main-txt-cl, #212121);
 }
 
-.user-contact,
-.user-name,
-.user-phone,
-.user-email,
-.user-coment {
+.modal__text--bottom {
+  margin-bottom: 12px;
+}
+
+/* Modal form start */
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.form-modal__user {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.label-text {
+.form-modal__user-name,
+.form-modal__user-phone,
+.form-modal__user-email,
+.form-modal__user-comment {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: 448px;
+}
+
+.form-modal__user-name--bottom,
+.form-modal__user-phone--bottom,
+.form-modal__user-email--bottom {
+  margin-bottom: 10px;
+}
+
+.form-modal__user-comment {
+  margin-bottom: 20px;
+}
+
+.form-modal__user-label {
   display: block;
   cursor: pointer;
-  margin-bottom: 4px;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -400,7 +423,12 @@ ol {
   letter-spacing: 0.01em;
   color: var(--gray-txt-cl), #757575;
 }
-.input-text {
+
+.form-modal__user-label {
+  margin-bottom: 4px;
+}
+
+.form-modal__user-input {
   cursor: pointer;
   padding: 12px 16px 12px 42px;
   height: 40px;
@@ -410,7 +438,7 @@ ol {
   transition: border var(--transition-duration) var(--transition-timing-function);
 }
 
-.feadback-icon {
+.form-modal__user-icon {
   cursor: pointer;
   display: block;
   position: absolute;
@@ -431,14 +459,13 @@ ol {
   outline: transparent;
 }
 
-.textarea-text {
+.form-modal__user-textarea {
   resize: none;
   height: 120px;
   padding: 10px 16px;
   width: 448px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin: 0;
   transition: border var(--transition-duration) var(--transition-timing-function);
 }
 
@@ -449,32 +476,6 @@ ol {
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-}
-
-.feadback-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.modal-text {
-  display: block;
-  text-align: center;
-}
-
-.user-name,
-.user-phone,
-.user-email,
-.user-coment {
-  position: relative;
-  cursor: pointer;
-  display: inline-block;
-  width: 448px;
-  margin-bottom: 10px;
-  padding: 0;
-}
-
-.user-coment:last-child {
-  margin-bottom: 20px;
 }
 
 /* Checbox agreement */
