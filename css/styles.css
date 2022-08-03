@@ -257,7 +257,7 @@ ol {
   color: var(--white-txt-cl, #ffffff);
   background-color: var(--btn-blue-bg-cl, #2196f3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: background-color var(--transition-duration) var(--transition-timing-function) 600ms;
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .btn-blue:hover,
@@ -449,12 +449,12 @@ ol {
   transform: translate(-50%);
 }
 
-.input-text:focus + .feadback-icon {
+.form-modal__user-input:focus + .form-modal__user-icon {
   fill: #2196f3;
 }
 
-.input-text:focus,
-.textarea-text:focus {
+.form-modal__user-input:focus,
+.form-modal__user-textarea:focus {
   border: 1px solid #2196f3;
   outline: transparent;
 }
@@ -469,7 +469,7 @@ ol {
   transition: border var(--transition-duration) var(--transition-timing-function);
 }
 
-.textarea-text::placeholder {
+.form-modal__user-textarea::placeholder {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -480,14 +480,17 @@ ol {
 
 /* Checbox agreement */
 
-.user-adreement {
+.form-modal__user-adreement {
   position: relative;
   display: inline-block;
   padding-left: 40px;
+}
+
+.form-modal__user-adreement--bottom {
   margin-bottom: 30px;
 }
 
-.label-adreement {
+.form-modal__label-adreement {
   display: inline-block;
   font-style: normal;
   font-weight: 400;
@@ -497,17 +500,17 @@ ol {
   color: var(--gray-txt-cl, #757575);
 }
 
-.agreement-link {
+.form-modal__agreement-link {
   color: var(--accent-txt-cl, #2196f3);
   text-decoration: underline;
 }
-.agreement-link:focus,
-.agreement-link:hover {
+.form-modal__agreement-link:focus,
+.form-modal__agreement-link:hover {
   color: var(--accent-hero-send-btn-bg-cl);
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
-.label-adreement::before {
+.form-modal__label-adreement::before {
   content: '';
   position: absolute;
   left: 15px;
@@ -524,11 +527,11 @@ ol {
     background-color var(--transition-duration) var(--transition-timing-function);
 }
 
-.checkbox-agreement:focus + .label-adreement::before {
+.form-modal__checkbox-agreement:focus + .form-modal__label-adreement::before {
   border-color: var(--accent-icon-bg-cl, #2196f3);
 }
 
-.checkbox-agreement:checked + .label-adreement::before {
+.form-modal__checkbox-agreement:checked + .form-modal__label-adreement::before {
   background-image: url(../img/icon\ check.svg);
   background-origin: border-box;
   background-size: contain;
@@ -536,7 +539,7 @@ ol {
   background-color: var(--accent-icon-bg-cl, #2196f3);
 }
 
-.checkbox-agreement {
+.form-modal__checkbox-agreement {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -547,7 +550,7 @@ ol {
   overflow: hidden;
 }
 
-.modal-btn {
+.form-modal__btn {
   display: block;
   margin: 0 auto;
   padding: 10px 52px;
@@ -601,8 +604,6 @@ ol {
 
 .preferences-list {
   display: flex;
-  padding: 0;
-  margin: 0;
 }
 
 .preference-item {
@@ -1039,6 +1040,7 @@ ol {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
   transition: border var(--transition-duration) var(--transition-timing-function);
 }
 
