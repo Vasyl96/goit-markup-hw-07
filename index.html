@@ -352,7 +352,7 @@
             </div>
             <!-- Footer social -->
             <div class="footer-social footer-social--right">
-                <strong class="footer-social__text footer-social__text--botton">присоединяйтесь</strong>
+                <strong class="footer-social__text footer-social__text--bottom">присоединяйтесь</strong>
                 <ul class="icon-list">
                     <li class="footer-social__icon-item icon-item"><a class="footer-social__icon-link icon-link"
                             target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/"><svg
@@ -377,20 +377,20 @@
                 </ul>
             </div>
             <!-- Footer subscription -->
-            <div class="footer-subscription">
-                <form name="subscription" autocomplete="off">
-                    <strong class="subscription__text subscription__text--botoon">Підпишіться на розсилку</strong>
-                    <div class="send-email">
-                        <input type="email" name="email" class="input-email" placeholder="E-mail" id="user-email">
-                        <button type="submit" class="send-btn btn-blue">Підписатися
-                            <svg class="send-icon" width="24" height="24">
-                                <use href="./img/sprite.svg#icon-send"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </form>
-
-            </div>
+            <form name="footer-subscription__form" autocomplete="off">
+                <strong class="subscription__text subscription__text--bottom">Підпишіться на
+                    розсилку</strong>
+                <div class="subscription-email">
+                    <input type="email" name="email" class="subscription-email__input" placeholder="E-mail"
+                        id="user-email">
+                    <button type="submit"
+                        class="subscription-email__btn subscription-email__btn--left btn-blue">Підписатися
+                        <svg class="subscription-email__btn--icon" width="24" height="24">
+                            <use href="./img/sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
         </div>
 
     </footer>
