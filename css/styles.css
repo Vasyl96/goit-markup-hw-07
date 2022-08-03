@@ -12,6 +12,7 @@
   --white-logo-txt-cl: #ffffff;
   --dark-logo-txt-cl: #000000;
   --skyblue-logo-txt-cl: #2196f3;
+  --accent-input-cl: #2196f3;
 
   /* Background-color */
   --gray-icon-bg-cl: #757575;
@@ -23,13 +24,15 @@
   --backdrop-bg-cl: rgba(0, 0, 0, 0.2);
   --footer-hero-bg-cl: #2f303a;
   --team-bg-cl: #f5f4fa;
-  --filter-btn-bg-cl: #f5f4fa;
+  /* btn-silver */
+  --btn-silver--bg-cl: #f5f4fa;
+  --accent-btn-silver-bg-cl: #2196f3;
+  /* btn-silver */
   /* btn-blue */
   --btn-blue-bg-cl: #2196f3;
   --accent-btn-blue-bg-cl: #188ce8;
   /* btn-blue */
   --accent-icon-bg-cl: #2196f3;
-  --accent-filter-btn-bg-cl: #2196f3;
   --hero-lg-bg-cl: rgba(47, 48, 58, 0.4);
   --box-bg-cl: #f5f4fa;
 
@@ -235,20 +238,25 @@ ol {
 }
 /* Logo end */
 
+/* Button start */
+
+.btn {
+  border-radius: 4px;
+  border: transparent;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 /* Button blue start*/
 .btn-blue {
   padding: 10px 28px;
-  border: transparent;
-  border-radius: 4px;
   min-width: 200px;
   font-weight: 700;
-  font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   color: var(--white-txt-cl, #ffffff);
   background-color: var(--btn-blue-bg-cl, #2196f3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
   transition: background-color var(--transition-duration) var(--transition-timing-function) 600ms;
 }
 
@@ -258,6 +266,31 @@ ol {
   background-color: var(--accent-btn-blue-bg-cl, #188ce8);
 }
 /* Button blue end */
+
+/* Button silver start */
+.btn-silver {
+  padding: 6px 22px;
+  min-width: 73px;
+  font-weight: 500;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: inherit;
+  background-color: var(--btn-silver-bg-cl, #f5f4fa);
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    background-color var(--transition-duration) var(--transition-timing-function),
+    box-shadow var(--transition-duration) var(--transition-timing-function);
+}
+
+.btn-silver:hover,
+.btn-silver:focus {
+  color: var(--white-txt-cl, #ffffff);
+  background-color: var(--accent-btn-silver-bg-cl, #2196f3);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+/* Button silver end */
+/* Button end */
 
 /* Modal and is-hedden */
 .backdrop.is-hidden {
@@ -737,23 +770,6 @@ ol {
   margin-right: 8px;
 }
 
-.filter-btn {
-  padding: 6px 22px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  min-width: 73px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: inherit;
-  background-color: var(--filter-btn-bg-cl, #f5f4fa);
-  transition: color var(--transition-duration) var(--transition-timing-function),
-    background-color var(--transition-duration) var(--transition-timing-function),
-    box-shadow var(--transition-duration) var(--transition-timing-function);
-}
-
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -1001,7 +1017,7 @@ ol {
 
 .subscription-email__input:focus {
   outline: none;
-  border: 1px solid var(--accent-filter-btn-bg-cl);
+  border: 1px solid var(--accent-input-cl, #2196f3);
 }
 
 .subscription-email__input::placeholder {
@@ -1039,13 +1055,3 @@ ol {
 }
 /* Footer subscription end */
 /* Footer end */
-
-/* Hover and Focus */
-.filter-btn:hover,
-.filter-btn:focus {
-  cursor: pointer;
-  color: var(--white-txt-cl, #ffffff);
-  background-color: var(--accent-filter-btn-bg-cl, #2196f3);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
