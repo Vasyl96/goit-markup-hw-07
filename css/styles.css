@@ -1,9 +1,9 @@
-:root {
-  /* Fons */
+/* :root {
+
   --main-fons: 'Roboto', sans-serif;
   --secondary-fons: 'Raleway', sans-serif;
 
-  /* Text color */
+  
   --dark-main-txt-cl: #212121;
   --silver-txt-cl: rgba(255, 255, 255, 0.6);
   --gray-txt-cl: #757575;
@@ -14,7 +14,7 @@
   --skyblue-logo-txt-cl: #2196f3;
   --accent-input-cl: #2196f3;
 
-  /* Background-color */
+
   --gray-icon-bg-cl: #757575;
   --silver-icon-bg-cl: #afb1b8;
   --white-modal-icon-bg-cl: #ffffff;
@@ -24,46 +24,49 @@
   --backdrop-bg-cl: rgba(0, 0, 0, 0.2);
   --footer-hero-bg-cl: #2f303a;
   --team-bg-cl: #f5f4fa;
-  /* btn-silver */
   --btn-silver--bg-cl: #f5f4fa;
   --accent-btn-silver-bg-cl: #2196f3;
-  /* btn-silver */
-  /* btn-blue */
   --btn-blue-bg-cl: #2196f3;
   --accent-btn-blue-bg-cl: #188ce8;
-  /* btn-blue */
   --accent-icon-bg-cl: #2196f3;
   --hero-lg-bg-cl: rgba(47, 48, 58, 0.4);
   --box-bg-cl: #f5f4fa;
 
-  /* others */
+
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --transition-duration: 250ms;
   --transition-delay: 600ms;
   --indent: 30px;
   --items: 4;
-}
+} */
+
+/* Base styles */
+/* body {
+  font-family: var(--main-fons);
+  color: var(--dark-main-txt-cl, #212121);
+} */
+
+/* Reset scrolling in the modal window */
+/* .no-scroll {
+  overflow: hidden;
+} */
 
 /* Card set start */
-.card-set {
+/* .card-set {
   display: flex;
   flex-wrap: wrap;
   gap: var(--indent);
-}
+} */
 
-.card-set-items {
+/* .card-set-items {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-}
+} */
 
 /* Card set end */
 
-body {
-  font-family: var(--main-fons);
-  color: var(--dark-main-txt-cl, #212121);
-}
-
+/* Reset style start */
 /* Reset tag indents */
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -74,34 +77,31 @@ ul,
 ol {
   margin: 0;
   padding: 0;
-}
+} */
 
 /* Reset the link underline */
-a {
+/* a {
   text-decoration: none;
-}
+} */
 
 /* Reset list markers */
-ul,
+/* ul,
 ol {
   list-style: none;
-}
+} */
 
-img {
+/* Reset display inline */
+/* img {
   display: block;
-}
-
-/* Reset scrolling in the modal window */
-.no-scroll {
-  overflow: hidden;
-}
+} */
+/* Reset style end */
 
 /* Container */
-.container {
+/* .container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-}
+} */
 
 /* Header start */
 

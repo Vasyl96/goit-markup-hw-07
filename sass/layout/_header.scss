@@ -1,0 +1,62 @@
+/*
+  |==============================
+  | Header style
+  |==============================
+*/
+
+.header {
+    border-bottom: 1px solid #ececec;
+
+    &__container {
+            display: flex;
+        }
+
+    &__contact-list {
+            display: flex;
+            margin-left: auto;
+            align-items: center;
+    }
+
+
+}
+
+
+
+
+.header__contact-item {
+    margin-right: 50px;
+}
+
+.header__contact-item:last-child {
+    margin-right: 0;
+}
+
+.header__contact-link {
+    @include flexbox(flex, center, center);
+    @include font(14px, 500, 16px, 0.02em);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: 0.02em;
+    color: var(--gray-txt-cl, #757575);
+    fill: var(--gray-icon-bg-cl, #757575);
+    transition: color var(--transition-duration) var(--transition-timing-function),
+        fill var(--transition-duration) var(--transition-timing-function);
+}
+
+.header__contact-link:hover,
+.header__contact-link:focus {
+    color: var(--accent-txt-cl, #2196f3);
+    fill: var(--accent-icon-bg-cl, #2196f3);
+}
+
+.header__contact-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.header__contact-icon--right {
+    margin-right: 10px;
+}
