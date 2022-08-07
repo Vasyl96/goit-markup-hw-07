@@ -45,10 +45,11 @@
 
 // Mixin for flexbox
 
-@mixin flexbox($type: flex, $jc: center, $ai: center) {
+@mixin flexbox($type: flex, $ai: center, $jc: center, $fd: column) {
     display: $type;
-    justify-content: $jc;
     align-items: $ai;
+    justify-content: $jc;
+    flex-direction: $fd;
 }
 
 
@@ -58,7 +59,7 @@
 @mixin font($fs: 14px, $fw: 400, $lh: 24px, $ls: 0.02em) {
     font-size: $fs;
     font-weight: $fw;
-    line-height: decimal-round($lh/$fs, 2);
+    line-height: decimal-round($lh / $fs, 2);
     letter-spacing: $ls;
 }
 

@@ -105,7 +105,7 @@ ol {
 
 /* Header start */
 
-.header {
+/* .header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -155,11 +155,11 @@ ol {
 
 .header__contact-icon--right {
   margin-right: 10px;
-}
+} */
 /* Header end */
 
 /* Nav start */
-.nav {
+/* .nav {
   display: flex;
   align-items: center;
 }
@@ -214,12 +214,12 @@ ol {
   padding-bottom: 25px;
   margin-left: 0;
   margin-right: 93px;
-}
+} */
 
 /* Nav end */
 
 /* Logo start */
-.logo {
+/* .logo {
   align-items: center;
   font-family: var(--secondary-fons);
   font-weight: 700;
@@ -239,7 +239,7 @@ ol {
 .logo:focus {
   color: var(--accent-txt-cl, #2196f3);
   fill: var(--accent-icon-bg-cl, #2196f3);
-}
+} */
 /* Logo end */
 
 /* Button start */
