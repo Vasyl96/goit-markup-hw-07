@@ -1,6 +1,6 @@
 :root {
-  --main-fons: "Roboto", sans-serif;
-  --secondary-fons: "Raleway", sans-serif;
+  --main-fons: 'Roboto', sans-serif;
+  --secondary-fons: 'Raleway', sans-serif;
   --dark-main-txt-cl: #212121;
   --silver-txt-cl: rgba(255, 255, 255, 0.6);
   --gray-txt-cl: #757575;
@@ -43,7 +43,7 @@
   padding: 0;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   margin: -1px;
 }
 
@@ -57,7 +57,6 @@ body {
   color: var(--dark-main-txt-cl, #212121);
 }
 
-/* Reset scrolling in the modal window */
 .no-scroll {
   overflow: hidden;
 }
@@ -67,7 +66,6 @@ body {
   | Reset style
   |==============================
 */
-/* Reset tag indents */
 h1,
 h2,
 h3,
@@ -81,18 +79,15 @@ ol {
   padding: 0;
 }
 
-/* Reset the link underline */
 a {
   text-decoration: none;
 }
 
-/* Reset list markers */
 ul,
 ol {
   list-style: none;
 }
 
-/* Reset display inline */
 img {
   display: block;
 }
@@ -127,8 +122,8 @@ img {
   display: flex;
   margin-left: auto;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .header__contact-item {
@@ -140,6 +135,19 @@ img {
 }
 
 .header__contact-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -148,8 +156,10 @@ img {
   letter-spacing: 0.02em;
   color: var(--gray-txt-cl, #757575);
   fill: var(--gray-icon-bg-cl, #757575);
-  -webkit-transition: color var(--transition-duration) var(--transition-timing-function), fill var(--transition-duration) var(--transition-timing-function);
-  transition: color var(--transition-duration) var(--transition-timing-function), fill var(--transition-duration) var(--transition-timing-function);
+  -webkit-transition: color var(--transition-duration) var(--transition-timing-function),
+    fill var(--transition-duration) var(--transition-timing-function);
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    fill var(--transition-duration) var(--transition-timing-function);
 }
 
 .header__contact-link:hover,
@@ -165,4 +175,4 @@ img {
 
 .header__contact-icon--right {
   margin-right: 10px;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

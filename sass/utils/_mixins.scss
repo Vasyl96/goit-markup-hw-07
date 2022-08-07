@@ -40,7 +40,7 @@
         @media (max-width: #{$desktop - 1}) {
             @content;
         }
-    }
+    }}
 
 
 // Mixin for flexbox
@@ -106,4 +106,4 @@
         @warn '#{ $mode } is undefined keyword.';
         @return $number;
     }
-}}
+}
