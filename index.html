@@ -58,12 +58,12 @@
             </button>
             <!-- User form -->
             <strong class="modal__text modal__text--bottom">Залиште свої дані, ми вам передзвонимо</strong>
-            <form name="modal__form form-modal" autocomplete="on" novalidate>
+            <form name="modal__form" autocomplete="on" novalidate>
                 <!-- User data -->
-                <div class="form-modal__user">
+                <div class="form-modal">
                     <!-- User name -->
                     <div class="form-modal__user-name form-modal__user-name--bottom">
-                        <label for="text" class="form-modal__user-label">Ім'я</label>
+                        <label for="text" class="form-modal__user-label form-modal__user-label--bottom">Ім'я</label>
                         <input type="text" name="user-name" class="form-modal__user-input" id="text">
                         <svg class="form-modal__user-icon" width="18" height="18">
                             <use href="./img/sprite.svg#icon-person"></use>
@@ -71,7 +71,7 @@
                     </div>
                     <!-- User phone -->
                     <div class="form-modal__user-phone form-modal__user-phone--bottom">
-                        <label for="phone" class="form-modal__user-label ">Телефон</label>
+                        <label for="phone" class="form-modal__user-label form-modal__user-label--bottom">Телефон</label>
                         <input type="tel" name="user-phone" class="form-modal__user-input" id="phone">
                         <svg class="form-modal__user-icon" width="18" height="18">
                             <use href="./img/sprite.svg#icon-phone"></use>
@@ -79,7 +79,7 @@
                     </div>
                     <!-- User email -->
                     <div class="form-modal__user-email form-modal__user-email--bottom">
-                        <label for="email" class="form-modal__user-label">Пошта</label>
+                        <label for="email" class="form-modal__user-label form-modal__user-label--bottom">Пошта</label>
                         <input type="email" name="user-name" class="form-modal__user-input" id="email">
                         <svg class="form-modal__user-icon" width="18" height="18">
                             <use href="./img/sprite.svg#icon-email"></use>
@@ -87,7 +87,8 @@
                     </div>
                     <!-- User comment -->
                     <div class="form-modal__user-comment form-modal__user-comment--bottom">
-                        <label for="comment" class="form-modal__user-label">Коментар</label>
+                        <label for="comment"
+                            class="form-modal__user-label form-modal__user-label--bottom">Коментар</label>
                         <textarea name="feadback" rows="7" class="form-modal__user-textarea" id="comment"
                             placeholder="Введіть текст"></textarea>
                     </div>
@@ -383,7 +384,8 @@
                         id="user-email">
                     <button type="submit"
                         class="subscription-email__btn btn subscription-email__btn--left btn-blue">Підписатися
-                        <svg class="subscription-email__btn--icon" width="24" height="24">
+                        <svg class="subscription-email__btn-icon subscription-email__btn-icon--left" width="24"
+                            height="24">
                             <use href="./img/sprite.svg#icon-send"></use>
                         </svg>
                     </button>
